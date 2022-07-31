@@ -13,16 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Myers Berry',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.red     ),
+        
+        scaffoldBackgroundColor: Color.fromARGB(255, 36, 36, 36),
+        ///primarySwatch: Colors.red           
+        
+        ),
       home: const MyHomePage(title: 'Myers Berry'),
     );
   }
@@ -58,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 14, 14, 14),
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
@@ -93,6 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Color.fromARGB(255, 182, 12, 0),
         onPressed: (){},
         tooltip: 'No Sir',
         child: const Icon(Icons.add),
